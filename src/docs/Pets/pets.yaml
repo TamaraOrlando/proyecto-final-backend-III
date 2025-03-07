@@ -1,0 +1,184 @@
+paths:
+  /api/pets:
+    get:
+      summary: Obtener todas las mascotas
+      tags:
+        - Pets
+      responses:
+        "200":
+          description: Lista de todas las mascotas
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Pet"
+        "500":
+          description: Error en el servidor
+    post:
+      summary: Crear una nueva mascota
+      tags:
+        - Pets
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/requestBodies/PetInput"
+      responses:
+        "201":
+          description: Mascota creada correctamente
+        "400":
+          description: Datos incompletos
+        "500":
+          description: Error en el servidor
+  /api/pets/withimage:
+    post:
+      summary: Crear una mascota con imagen
+      tags:
+        - Pets
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Nombre de la mascota
+                specie:
+                  type: string
+                  description: Especie de la mascota
+                birthDate:
+                  type: string
+                  format: date
+                  description: Fecha de nacimiento de la mascota
+                image:
+                  type: string
+                  format: binary
+                  description: Imagen de la mascota
+      responses:
+        "201":
+          description: Mascota con imagen creada correctamente
+        "400":
+          description: Datos incompletos
+        "500":
+          description: Error en el servidor
+  /api/pets/{pid}:
+    put:
+      summary: Actualizar información de una mascota por ID
+      tags:
+        - Pets
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: ID de la mascota a actualizar
+          schema:
+            type: string
+            pattern: "^[0-9a-fA-F]{24}$"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/requestBodies/PetInput"
+      responses:
+        "200":
+          description: Mascota actualizada correctamente
+        "404":
+          description: Mascota no encontrada
+        "500":
+          description: Error en el servidor
+    delete:
+      summary: Eliminar una mascota por ID
+      tags:
+        - Pets
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: ID de la mascota a eliminar
+          schema:
+            type: string
+            pattern: "^[0-9a-fA-F]{24}$"
+      responses:
+        "200":
+          description: Mascota eliminada correctamente
+        "404":
+          description: Mascota no encontrada
+        "500":
+          description: Error en el servidor
+
+components:
+  schemas:
+    Pet:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: ID de la mascota
+        name:
+          type: string
+          description: Nombre de la mascota
+        specie:
+          type: string
+          description: Especie de la mascota
+        birthDate:
+          type: string
+          format: date
+          description: Fecha de nacimiento de la mascota
+        adopted:
+          type: boolean
+          description: Si la mascota está adoptada o no
+          default: false
+        owner:
+          type: string
+          description: ID del usuario propietario de la mascota
+        image:
+          type: string
+          description: Ruta de la imagen de la mascota
+      example:
+        _id: "507f1f77bcf86cd799439011"
+        name: "Fido"
+        specie: "Perro"
+        birthDate: "2021-06-01"
+        adopted: false
+        owner: "507f1f77bcf86cd799439012"
+        image: "/public/img/1671549990926-coderDog.jpg"
+  requestBodies:
+    PetInput:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Nombre de la mascota
+        specie:
+          type: string
+          description: Especie de la mascota
+        birthDate:
+          type: string
+          format: date
+          description: Fecha de nacimiento de la mascota
+        adopted:
+          type: boolean
+          description: Indica si la mascota está adoptada
+          default: false
+        owner:
+          type: string
+          description: ID del usuario propietario
+        image:
+          type: string
+          description: Ruta de la imagen de la mascota (opcional)
+      required:
+        - name
+        - specie
+        - birthDate
+      example:
+        name: "Fido"
+        specie: "Perro"
+        birthDate: "2021-06-01"
+        adopted: false
+        owner: "507f1f77bcf86cd799439012"
+        image: "/public/img/1671549990926-coderDog.jpg"

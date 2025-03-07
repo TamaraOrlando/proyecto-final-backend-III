@@ -1,0 +1,89 @@
+paths:
+  /api/adoptions:
+    get:
+      summary: Obtener todas las adopciones
+      tags:
+        - Adoptions
+      responses:
+        "200":
+          description: Lista de todas las adopciones
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Adoption"
+        "500":
+          description: Error en el servidor
+  /api/adoptions/{aid}:
+    get:
+      summary: Obtener detalles de una adopción por ID
+      tags:
+        - Adoptions
+      parameters:
+        - name: aid
+          in: path
+          required: true
+          description: ID de la adopción a consultar
+          schema:
+            type: string
+            pattern: "^[0-9a-fA-F]{24}$"
+      responses:
+        "200":
+          description: Detalles de la adopción encontrada
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Adoption"
+        "404":
+          description: Adopción no encontrada
+        "500":
+          description: Error en el servidor
+  /api/adoptions/{uid}/{pid}:
+    post:
+      summary: Crear una adopción de mascota
+      tags:
+        - Adoptions
+      parameters:
+        - name: uid
+          in: path
+          required: true
+          description: ID del usuario que adopta la mascota
+          schema:
+            type: string
+            pattern: "^[0-9a-fA-F]{24}$"
+        - name: pid
+          in: path
+          required: true
+          description: ID de la mascota a adoptar
+          schema:
+            type: string
+            pattern: "^[0-9a-fA-F]{24}$"
+      responses:
+        "200":
+          description: Mascota adoptada correctamente
+        "400":
+          description: Error si la mascota ya está adoptada o los datos son incorrectos
+        "404":
+          description: Usuario o mascota no encontrados
+        "500":
+          description: Error en el servidor
+
+components:
+  schemas:
+    Adoption:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: ID de la adopción
+        owner:
+          type: string
+          description: ID del usuario que adoptó la mascota
+        pet:
+          type: string
+          description: ID de la mascota adoptada
+      example:
+        _id: "507f1f77bcf86cd799439011"
+        owner: "507f1f77bcf86cd799439012"
+        pet: "507f1f77bcf86cd799439013"

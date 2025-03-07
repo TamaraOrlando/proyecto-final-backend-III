@@ -1,0 +1,30 @@
+** .ENV.DEVELOPMENT
+
+NODE_ENV=development
+PORT=8080
+MONGO_URL=mongodb+srv://tamilyn07:backend@cluster0.xzfsg.mongodb.net/Adopciones?retryWrites=true&w=majority&appName=Cluster0
+
+//////////////////////////////////////////////
+
+** .ENV.PRODUCTION
+
+NODE_ENV=production
+PORT=3000
+MONGO_URL=mongodb+srv://tamilyn07:backend@cluster0.xzfsg.mongodb.net/Adopciones?retryWrites=true&w=majority&appName=Cluster0
+
+//////////////////////////////////////////////
+
+** .ENV.TESTING
+
+NODE_ENV=testing
+PORT=8081
+MONGO_URL=mongodb+srv://tamilyn07:backend@cluster0.xzfsg.mongodb.net/Adopciones?retryWrites=true&w=majority&appName=Cluster0
+
+//////////////////////////////////////////////
+
+
+DOCKER IMAGE: 
+
+https://hub.docker.com/repository/docker/tamilyn07/proyectofinal
+
+//////////////////////////////////////////////

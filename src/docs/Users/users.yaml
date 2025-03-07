@@ -1,0 +1,129 @@
+paths: 
+  /api/users:
+    get: 
+      summary: Obtenemos todos los usuarios de la Base de Datos
+      tags: 
+        - Users
+      responses: 
+        "200": 
+          description: Obtienen todos los usuarios correctamente
+          content: 
+            application/json: 
+              schema: 
+                type: array
+                items:
+                  $ref: "#components/schemas/User"
+        "500":
+          description: Error interno del servidor
+  /api/users/{uid}: 
+    get: 
+      summary: Obtiene un solo usuario por ID
+      tags: 
+       - Users
+      parameters: 
+      - name: uid
+        in: path
+        required: true
+        description: Id del usuario que se quiere buscar
+        schema: 
+          type: string
+          pattern: "^[0-9a-fA-F]{24}$"
+      responses: 
+        "200": 
+          description: Usuario encontrado
+          content: 
+            application/json: 
+              schema: 
+                type: array
+                items: 
+                  $ref: "#components/schemas/User"
+        "500": 
+          description: Error interno del servidor
+    put: 
+      summary: Actualizamos usurio por ID
+      tags: 
+        - Users
+      parameters: 
+      - name: uid
+        in: path
+        required: true
+        description: id del usuario que se quiere actualizar
+        schema: 
+          type: string
+          pattern: "^[0-9a-fA-F]{24}$"
+      requestBody: 
+        required: true
+        content: 
+          application/json: 
+            schema: 
+              $ref: "#components/requestBodies/updateUser"
+      responses: 
+        "200": 
+          description: Usuario actualizado correctamente
+        "404": 
+          description: Usuario no encontrado
+        "500": 
+          description: Error interno del servidor
+components:
+  schemas: 
+    User: 
+      type: object
+      properties: 
+        _id: 
+          type: string
+          description: ID autogenerado por MongoDB
+        first_name: 
+          type: string
+          description: Nombre del usuario
+        last_name:
+          type: string
+          description: Apellido del usuario
+        password: 
+          type: string
+          description: Contraseña del usuario
+      example: 
+        _id: "507f1f77bcf86cd799439011"
+        first_name: Tinki
+        last_name: Winki
+        password: "1234"
+  requestBodies:
+    createUser: 
+      type: object
+      properties: 
+        first_name: 
+          type: string
+          description: Nombre del usuario
+        last_name:
+          type: string
+          description: Apellido del usuario
+        password: 
+          type: string
+          description: Password del usuario
+        email: 
+          type: string
+          description: Email del usuario
+      example: 
+        first_name: Mirtha 
+        last_name: Legrand 
+        email: lachiqui@legrand.com
+        password: "1234"
+    updateUser: 
+      type: object
+      properties: 
+        first_name: 
+          type: string
+          description: Nombre del usuario
+        last_name: 
+          type: string
+          description: Apellido del usuario
+        password: 
+          type: string
+          description: Password del usuario
+        email: 
+          type: string
+          description: Email del usuario
+      example: 
+        first_name: Mirtha 
+        last_name: Legrand 
+        email: lachiqui@legrand.com
+        password: "1234"

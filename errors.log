@@ -1,0 +1,363 @@
+http: GET en / - 01:15:57
+info: Obteniendo todas las adopciones
+http: GET en /67b9eb82185894c857fb26f7 - 01:15:57
+info: Buscando adopción con ID: 67b9eb82185894c857fb26f7
+warning: Adopción con ID 67b9eb82185894c857fb26f7 no encontrada
+http: POST en /67b0b55e09bcc4e342ed03c1/67a779da376ab335f61a0cbe - 01:15:58
+info: Creando adopción - Usuario: 67b0b55e09bcc4e342ed03c1, Mascota: 67a779da376ab335f61a0cbe
+warning: Usuario con ID 67b0b55e09bcc4e342ed03c1 no encontrado
+http: GET en / - 01:33:22
+info: Obteniendo todas las adopciones
+http: GET en /67b9eb82185894c857fb26f7 - 01:33:22
+info: Buscando adopción con ID: 67b9eb82185894c857fb26f7
+warning: Adopción con ID 67b9eb82185894c857fb26f7 no encontrada
+http: POST en /67b0b55e09bcc4e342ed03c1/67a779da376ab335f61a0cbe - 01:33:23
+info: Creando adopción - Usuario: 67b0b55e09bcc4e342ed03c1, Mascota: 67a779da376ab335f61a0cbe
+warning: Usuario con ID 67b0b55e09bcc4e342ed03c1 no encontrado
+http: GET en / - 02:01:55
+info: Obteniendo todas las adopciones
+http: GET en /67b9eb82185894c857fb26f7 - 02:01:55
+info: Buscando adopción con ID: 67b9eb82185894c857fb26f7
+warning: Adopción con ID 67b9eb82185894c857fb26f7 no encontrada
+http: POST en /67b0b55e09bcc4e342ed03c1/67a779da376ab335f61a0cbe - 02:01:55
+info: Creando adopción - Usuario: 67b0b55e09bcc4e342ed03c1, Mascota: 67a779da376ab335f61a0cbe
+warning: Usuario con ID 67b0b55e09bcc4e342ed03c1 no encontrado
+http: GET en / - 02:09:40
+info: Obteniendo todas las adopciones
+http: GET en /67b9eb82185894c857fb26f7 - 02:09:41
+info: Buscando adopción con ID: 67b9eb82185894c857fb26f7
+warning: Adopción con ID 67b9eb82185894c857fb26f7 no encontrada
+http: POST en /67b0b55e09bcc4e342ed03c1/67a779da376ab335f61a0cbe - 02:09:41
+info: Creando adopción - Usuario: 67b0b55e09bcc4e342ed03c1, Mascota: 67a779da376ab335f61a0cbe
+warning: Usuario con ID 67b0b55e09bcc4e342ed03c1 no encontrado
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 67b9eb82185894c857fb26f7
+warning: Adopción con ID 67b9eb82185894c857fb26f7 no encontrada
+info: Creando adopción - Usuario: 67b0b55e09bcc4e342ed03c1, Mascota: 67a779da376ab335f61a0cbe
+warning: Usuario con ID 67b0b55e09bcc4e342ed03c1 no encontrado
+http: GET en / - 02:48:32
+info: Obteniendo todos los usuarios...
+info: Se encontraron 162 usuarios.
+http: GET en / - 02:49:04
+info: Obteniendo todas las mascotas
+info: Se encontraron 208 mascotas.
+http: GET en / - 02:51:45
+debug: Mensaje de Debug
+http: Mensaje de HTTP
+info: Mensaje de INFO
+warning: Mensaje de Alerta
+error: Mensaje de Error
+fatal: Mensaje de Fatal
+http: GET en /mockingpet - 02:52:06
+http: GET en /mockingpets - 02:52:15
+info: Generando 10 mascotas de prueba
+error: Error al generar mascotas de prueba: MockingService.generatePets is not a function
+http: GET en /mockingpets - 03:03:54
+info: Generando 10 mascotas de prueba
+info: Mascotas de prueba generadas con éxito.
+http: GET en /mockingusers - 03:04:22
+info: Generando 50 usuarios de prueba
+info: Usuarios de prueba generados con éxito.
+http: GET en /generatedata - 03:04:37
+http: GET en /generateData - 03:04:53
+http: GET en /generateData?users=10&pets=5 - 03:14:36
+http: POST en /generateData?users=10&pets=20 - 03:16:30
+info: Generando datos de prueba - Usuarios: 10, Mascotas: 20
+info: Datos de prueba generados con éxito.
+http: GET en /mockingpets - 03:18:01
+info: Generando 10 mascotas de prueba
+info: Mascotas de prueba generadas con éxito.
+http: GET en /mockingusers - 03:18:07
+info: Generando 50 usuarios de prueba
+info: Usuarios de prueba generados con éxito.
+http: POST en /login - 03:18:19
+info: Intentando login con email: tamilyn07@gmail.com
+info: Usuario tamilyn07@gmail.com autenticado con éxito.
+http: POST en /register - 03:18:29
+warning: Intento de registro con valores incompletos.
+error: Error en el registro de usuario: Error al intentar registrar usuario
+http: POST en / - 03:18:40
+info: Mascota creada con éxito: {"name":"Kittt","specie":"Cat","birthDate":"2020-05-01T00:00:00.000Z","adopted":false,"image":"","_id":"67c7ecc08c5694ed6de3f672","__v":0}
+http: GET en / - 03:18:52
+info: Obteniendo todas las adopciones
+http: GET en / - 03:18:59
+info: Obteniendo todas las mascotas
+info: Se encontraron 209 mascotas.
+http: GET en /679fdc6e88784887ad5fd914 - 03:19:03
+info: Buscando usuario con ID: 679fdc6e88784887ad5fd914
+info: Usuario encontrado: {"_id":"679fdc6e88784887ad5fd914","first_name":"Tamara","last_name":"Orlando","email":"tamilyn07@gmail.com","password":"$2b$10$O81EOEv4hiCnbyWYACHoy.nxCuq4fMiiBY4uXyLlozJ4HvTdp/QG2","role":"user","pets":[{"_id":"679fe0a03a2555ff2966ee0a"}],"__v":0}
+http: GET en /mockingusers - 03:19:31
+info: Generando 50 usuarios de prueba
+info: Usuarios de prueba generados con éxito.
+http: GET en / - 03:20:51
+info: Obteniendo todas las adopciones
+http: GET en /679fdc6e88784887ad5fd914 - 03:21:23
+info: Buscando usuario con ID: 679fdc6e88784887ad5fd914
+info: Usuario encontrado: {"_id":"679fdc6e88784887ad5fd914","first_name":"Tamara","last_name":"Orlando","email":"tamilyn07@gmail.com","password":"$2b$10$O81EOEv4hiCnbyWYACHoy.nxCuq4fMiiBY4uXyLlozJ4HvTdp/QG2","role":"user","pets":[{"_id":"679fe0a03a2555ff2966ee0a"}],"__v":0}
+http: GET en / - 03:22:18
+info: Obteniendo todos los usuarios...
+info: Se encontraron 162 usuarios.
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b7, Mascota: 679fe0903a2555ff2966ee08
+info: Adopción creada con éxito - Usuario: 67a00c15e031770d433903b7, Mascota: 679fe0903a2555ff2966ee08
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b7, Mascota: 679fe0903a2555ff2966ee08
+warning: La mascota 679fe0903a2555ff2966ee08 ya está adoptada
+info: Buscando adopción con ID: invalidId123
+error: Error al obtener adopción: Cast to ObjectId failed for value "invalidId123" (type string) at path "_id" for model "Adoptions"
+info: Creando adopción - Usuario: 67a00c15e031770d433903b7, Mascota: 679fe0903a2555ff2966ee08
+warning: La mascota 679fe0903a2555ff2966ee08 ya está adoptada
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0bd3a2555ff2966ee0e
+info: Adopción creada con éxito - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0bd3a2555ff2966ee0e
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0a83a2555ff2966ee0c
+info: Adopción creada con éxito - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0a83a2555ff2966ee0c
+http: GET en / - 01:29:44
+info: Obteniendo todas las adopciones
+http: GET en /679fe15d3a2555ff2966ee14 - 01:29:44
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+http: POST en /67a00c15e031770d433903b5/679fe0bd3a2555ff2966ee0e - 01:29:45
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0bd3a2555ff2966ee0e
+warning: La mascota 679fe0bd3a2555ff2966ee0e ya está adoptada
+http: GET en /679fe15d3a2555ff2966ee14 - 01:29:45
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+http: POST en /67a00c15e031770d433903b5/679fe0a83a2555ff2966ee0c - 01:29:45
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0a83a2555ff2966ee0c
+warning: La mascota 679fe0a83a2555ff2966ee0c ya está adoptada
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0bd3a2555ff2966ee0e
+warning: La mascota 679fe0bd3a2555ff2966ee0e ya está adoptada
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0a83a2555ff2966ee0c
+warning: La mascota 679fe0a83a2555ff2966ee0c ya está adoptada
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0bd3a2555ff2966ee0e
+warning: La mascota 679fe0bd3a2555ff2966ee0e ya está adoptada
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0a83a2555ff2966ee0c
+warning: La mascota 679fe0a83a2555ff2966ee0c ya está adoptada
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0bd3a2555ff2966ee0e
+warning: La mascota 679fe0bd3a2555ff2966ee0e ya está adoptada
+info: Buscando adopción con ID: 123
+error: Error al obtener adopción: Cast to ObjectId failed for value "123" (type string) at path "_id" for model "Adoptions"
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0bd3a2555ff2966ee0e
+warning: La mascota 679fe0bd3a2555ff2966ee0e ya está adoptada
+info: Buscando adopción con ID: 123
+error: Error al obtener adopción: Cast to ObjectId failed for value "123" (type string) at path "_id" for model "Adoptions"
+info: Obteniendo todas las adopciones
+error: Error al obtener adopción: mongoose is not defined
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0bd3a2555ff2966ee0e
+info: Creando adopción - Usuario: 67a00c15e031770d433903b5, Mascota: 679fe0bd3a2555ff2966ee0e
+warning: La mascota 679fe0bd3a2555ff2966ee0e ya está adoptada
+error: Error al obtener adopción: mongoose is not defined
+info: Creando adopción - Usuario: null, Mascota: null
+info: Creando adopción - Usuario: null, Mascota: null
+error: Error al crear adopción: Cast to ObjectId failed for value "null" (type string) at path "_id" for model "Users"
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+warning: La mascota 679fe0bd3a2555ff2966ee0e ya está adoptada
+warning: ID inválido: 123
+warning: IDs inválidos o faltantes
+http: GET en / - 12:00:55
+info: Obteniendo todas las mascotas
+info: Se encontraron 209 mascotas.
+http: GET en / - 12:01:15
+info: Obteniendo todos los usuarios...
+info: Se encontraron 162 usuarios.
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Adopción creada con éxito - Usuario: 67a00c15e031770d433903b5, Mascota: 67a00c24e031770d43390419
+warning: ID inválido: 123
+warning: IDs inválidos o faltantes
+http: GET en / - 12:23:49
+info: Obteniendo todos los usuarios...
+info: Se encontraron 162 usuarios.
+http: GET en / - 12:23:54
+info: Obteniendo todas las mascotas
+info: Se encontraron 209 mascotas.
+http: GET en / - 12:23:58
+info: Obteniendo todas las adopciones
+http: GET en / - 12:25:37
+info: Obteniendo todas las mascotas
+info: Se encontraron 209 mascotas.
+http: GET en / - 12:25:50
+info: Obteniendo todas las mascotas
+info: Se encontraron 209 mascotas.
+http: GET en / - 12:25:52
+info: Obteniendo todas las mascotas
+info: Se encontraron 209 mascotas.
+http: POST en / - 12:27:51
+info: Mascota creada con éxito: {"name":"Fido","specie":"Perro","birthDate":"2021-06-01T00:00:00.000Z","adopted":false,"image":"","_id":"67c91637c14a5d35f94c59a7","__v":0}
+http: GET en / - 12:49:24
+info: Obteniendo todas las adopciones
+http: GET en /679fe15d3a2555ff2966ee14 - 12:49:31
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+http: GET en /679fe15d3a2555ff2966ee14 - 12:49:34
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+http: POST en /67a00c15e031770d433903b5/67a00c24e031770d43390421 - 12:50:29
+info: Adopción creada con éxito - Usuario: 67a00c15e031770d433903b5, Mascota: 67a00c24e031770d43390421
+http: POST en / - 12:51:12
+info: Mascota creada con éxito: {"name":"Fido","specie":"Perro","birthDate":"2021-06-01T00:00:00.000Z","adopted":false,"image":"","_id":"67c91bb0d6d1f2b1603fa09e","__v":0}
+http: GET en / - 12:52:28
+info: Obteniendo todas las mascotas
+info: Se encontraron 211 mascotas.
+http: PUT en /67c91bb0d6d1f2b1603fa09e - 12:53:55
+info: Actualizando mascota con ID: 67c91bb0d6d1f2b1603fa09e
+info: Mascota actualizada con éxito: {"_id":"67c91bb0d6d1f2b1603fa09e","name":"Fido","specie":"Perro","birthDate":"2021-06-01T00:00:00.000Z","adopted":false,"image":"","__v":0}
+http: PUT en /67c91bb0d6d1f2b1603fa09e - 12:53:56
+info: Actualizando mascota con ID: 67c91bb0d6d1f2b1603fa09e
+info: Mascota actualizada con éxito: {"_id":"67c91bb0d6d1f2b1603fa09e","name":"Fido","specie":"Perro","birthDate":"2021-06-12T00:00:00.000Z","adopted":false,"image":"/public/img/1671549990926-coderDog.jpg","__v":0,"owner":"507f1f77bcf86cd799439012"}
+http: GET en / - 12:54:10
+info: Obteniendo todas las mascotas
+info: Se encontraron 211 mascotas.
+http: DELETE en /67c91637c14a5d35f94c59a7 - 12:54:42
+info: Eliminando mascota con ID: 67c91637c14a5d35f94c59a7
+info: Mascota con ID 67c91637c14a5d35f94c59a7 eliminada correctamente.
+http: DELETE en /67c91637c14a5d35f94c59a7 - 12:54:43
+info: Eliminando mascota con ID: 67c91637c14a5d35f94c59a7
+info: Mascota con ID 67c91637c14a5d35f94c59a7 eliminada correctamente.
+http: GET en / - 12:54:52
+info: Obteniendo todas las mascotas
+info: Se encontraron 210 mascotas.
+http: POST en / - 12:55:14
+http: POST en / - 12:55:15
+http: POST en / - 01:03:02
+http: POST en / - 01:03:05
+http: POST en /register - 01:04:34
+info: Intentando registrar usuario con email: tamitami7@gmail.com
+info: Usuario registrado con éxito: ID 67c91ed2f7d0f73cd0d2e8bf
+http: POST en /register - 01:28:26
+info: Intentando registrar usuario con email: lachiqui@legrand.com
+info: Usuario registrado con éxito: ID 67c9246a2b19bc81bfc0f1b6
+http: POST en /register - 01:29:35
+info: Intentando registrar usuario con email: lachiqui@legrand.com
+warning: Registro fallido: el usuario con email lachiqui@legrand.com ya existe.
+http: GET en / - 01:30:12
+info: Obteniendo todos los usuarios...
+info: Se encontraron 164 usuarios.
+http: PUT en /67c9246a2b19bc81bfc0f1b6 - 01:30:26
+info: Intentando actualizar usuario con ID: 67c9246a2b19bc81bfc0f1b6
+info: Usuario con ID 67c9246a2b19bc81bfc0f1b6 actualizado con éxito.
+http: GET en / - 01:30:49
+info: Obteniendo todos los usuarios...
+info: Se encontraron 164 usuarios.
+http: GET en / - 01:31:22
+info: Obteniendo todas las adopciones
+http: GET en / - 04:15:07
+info: Obteniendo todas las adopciones
+http: GET en / - 04:15:57
+info: Obteniendo todos los usuarios...
+info: Se encontraron 164 usuarios.
+http: GET en / - 04:16:01
+info: Obteniendo todas las mascotas
+info: Se encontraron 210 mascotas.
+http: GET en / - 04:16:05
+info: Obteniendo todas las adopciones
+http: POST en /679fdc6e88784887ad5fd914/679fe0a03a2555ff2966ee0a - 04:16:32
+warning: La mascota 679fe0a03a2555ff2966ee0a ya está adoptada
+http: POST en /679fdc6e88784887ad5fd914/679fe0a03a2555ff2966ee0a - 04:17:00
+warning: La mascota 679fe0a03a2555ff2966ee0a ya está adoptada
+http: POST en /679fdc6e88784887ad5fd914/67a00c24e031770d4339041f - 04:17:26
+info: Adopción creada con éxito - Usuario: 679fdc6e88784887ad5fd914, Mascota: 67a00c24e031770d4339041f
+http: POST en / - 04:17:37
+info: Mascota creada con éxito: {"name":"Kittty","specie":"Cat","birthDate":"2020-05-01T00:00:00.000Z","adopted":false,"image":"","_id":"67c94c116c157b7d28eafb0e","__v":0}
+http: POST en /register - 04:17:45
+info: Intentando registrar usuario con email: tamitami76@gmail.com
+info: Usuario registrado con éxito: ID 67c94c196c157b7d28eafb11
+http: POST en /login - 04:17:49
+info: Intentando login con email: tamilyn07@gmail.com
+info: Usuario tamilyn07@gmail.com autenticado con éxito.
+http: GET en /mockingusers - 04:17:54
+info: Generando 50 usuarios de prueba
+info: Usuarios de prueba generados con éxito.
+http: GET en /mockingpets - 04:18:08
+info: Generando 10 mascotas de prueba
+info: Mascotas de prueba generadas con éxito.
+http: POST en /generateData?users=10&pets=20 - 04:18:18
+info: Generando datos de prueba - Usuarios: 10, Mascotas: 20
+info: Datos de prueba generados con éxito.
+http: GET en /mockingpets - 04:18:37
+info: Generando 10 mascotas de prueba
+info: Mascotas de prueba generadas con éxito.
+http: GET en /mockingusers - 04:18:45
+info: Generando 50 usuarios de prueba
+info: Usuarios de prueba generados con éxito.
+http: GET en / - 04:19:02
+debug: Mensaje de Debug
+http: Mensaje de HTTP
+info: Mensaje de INFO
+warning: Mensaje de Alerta
+error: Mensaje de Error
+fatal: Mensaje de Fatal
+info: Obteniendo todas las adopciones
+info: Obteniendo todos los usuarios...
+info: Se encontraron 165 usuarios.
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+warning: La mascota 67a00c24e031770d4339041f ya está adoptada
+warning: ID inválido: 123
+warning: IDs inválidos o faltantes
+http: GET en / - 04:22:04
+info: Obteniendo todas las mascotas
+info: Se encontraron 211 mascotas.
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+info: Adopción creada con éxito - Usuario: 67a00c15e031770d433903b5, Mascota: 67a00c24e031770d4339041e
+warning: ID inválido: 123
+warning: IDs inválidos o faltantes
+http: GET en / - 04:22:52
+info: Obteniendo todas las mascotas
+info: Se encontraron 211 mascotas.
+http: GET en / - 12:31:54
+info: Obteniendo todas las adopciones
+http: GET en / - 12:31:56
+info: Obteniendo todas las adopciones
+http: GET en / - 12:32:08
+info: Obteniendo todas las mascotas
+info: Se encontraron 211 mascotas.
+http: GET en / - 12:32:33
+info: Obteniendo todos los usuarios...
+info: Se encontraron 165 usuarios.
+http: GET en /mockingpets - 12:32:57
+info: Generando 10 mascotas de prueba
+info: Mascotas de prueba generadas con éxito.
+http: GET en /mockingusers - 12:33:04
+info: Generando 50 usuarios de prueba
+info: Usuarios de prueba generados con éxito.
+info: Obteniendo todas las adopciones
+info: Buscando adopción con ID: 679fe15d3a2555ff2966ee14
+info: Adopción encontrada: {"_id":"679fe15d3a2555ff2966ee14","owner":"679fdc6e88784887ad5fd914","pet":"679fe0a03a2555ff2966ee0a","__v":0}
+warning: La mascota 67a00c24e031770d4339041a ya está adoptada
+warning: ID inválido: 123
+warning: IDs inválidos o faltantes
+http: GET en / - 12:34:33
+info: Obteniendo todas las mascotas
+info: Se encontraron 211 mascotas.
